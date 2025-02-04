@@ -1,0 +1,2 @@
+# ssafy
+To be ordinary
