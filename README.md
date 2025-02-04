@@ -1,2 +1,3 @@
 # ssafy
-To be ordinary
+
+## Algorithm Study
