@@ -30,7 +30,14 @@ public class P11399 {
     }
 <<<<<<< HEAD
 
+
 }
+<<<<<<< HEAD
 =======
 }
 >>>>>>> 1f770ce (add solution 0205)
+=======
+
+
+
+>>>>>>> a88fa7a (add solution 0205)
