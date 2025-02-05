@@ -2,8 +2,8 @@
 
 ## week1(0205 ~ 0211)
 
-|     |  #  | Title | Difficulty | Status | About |
-| :-: | :-: | :---: | :--------: | :----: | :---: |
+|     |  #  | Title | Difficulty |
+| :-: | :-: | :---: | :--------: |
 
 |1|11399|ATM(https://www.acmicpc.net/problem/11399)|![Silver IV](https://img.shields.io/badge/SILVER%20IV-A3A3A3?style=flat)
 |2|1181|단어 정렬(https://www.acmicpc.net/problem/1181)|![Silver V](https://img.shields.io/badge/SILVER%20V-A3A3A3?style=flat)
