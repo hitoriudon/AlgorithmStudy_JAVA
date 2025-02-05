@@ -1,0 +1,4 @@
+* text_auto eol=lf
+*.java text eol=lf charset=UTF-8
+*.java text eol=lf charset=UTF-8
+*.txt text eol=lf charset=UTF-8
