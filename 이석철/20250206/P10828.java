@@ -14,6 +14,7 @@ public class P10828 {
             char c = command[0].charAt(0); // 명령어 첫 글자
             int cSize = command[0].length(); // push와 pop 구분 (사이즈)
             
+            // empty 항상 체크
             if (c == 't'){ // top
                 System.out.println(stack.isEmpty() ? -1 : stack.get(stack.size() - 1));
             } else if (c == 's') { // size

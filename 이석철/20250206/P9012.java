@@ -25,6 +25,7 @@ public class P9012{
                 }
             }
             
+            // 삼항 연산자로 줄일 수 있다!
             if (stack.size() <= 0){
                 System.out.println("YES");
             } else {
