@@ -11,6 +11,8 @@ public class P10773 {
 
         Stack<Integer> stack = new Stack<>();
         int sum = 0;
+
+        // 0이 나오면 직전 요소 값을 sum에서 빼주면 된다.
         for (int i = 0; i < k; i++){
             int n = Integer.parseInt(br.readLine());
             if (n == 0){
