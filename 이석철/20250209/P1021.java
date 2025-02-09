@@ -28,6 +28,7 @@ public class P1021 {
                 targetIndex++;
             }
             
+            // 중간 인덱스 찾는 코드
             int halfIndex;
             if (dq.size() % 2 == 0) {
                 halfIndex = dq.size() / 2 - 1;

@@ -7,7 +7,7 @@ public class P18115 {
         int n = Integer.parseInt(br.readLine());
         StringTokenizer st = new StringTokenizer(new StringBuilder(br.readLine()).reverse().toString());
         
-        /** 이 문제도 어제처럼 우선순위 큐로 풀었는데, 시간 초과 났음... 그냥 ArrayDeque으로 푸는 게 맞겠다 싶어서 코드 변경함 */
+        /** 이 문제도 어제처럼 우선순위 큐로 풀었는데, 시간 초과 났음... 그냥 ArrayDeque으로 푸는 게 맞겠다 싶어서 코드 변경함  */
         Deque<Integer> deque = new ArrayDeque<>();
 
         for (int i = 1; i <= n; i++) {
