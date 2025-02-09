@@ -34,7 +34,7 @@ public class P1966 {
                     pq.poll(); 
                     cnt++; 
                     if (index == m) { 
-                        sb.append(cnt).append("\n");
+                        sb.append(cnt).append("\n"); // append 자바에서 사용하기
                         break;
                     }
                 } else { 

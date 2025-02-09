@@ -8,7 +8,7 @@ public class P1158 {
         int n = Integer.parseInt(st.nextToken());
         int k = Integer.parseInt(st.nextToken());
 
-        ArrayDeque<Integer> deque = new ArrayDeque<>(); // que
+        ArrayDeque<Integer> deque = new ArrayDeque<>(); // que랑 같음
         for (int i = 1; i <= n; i++) {
             deque.offer(i);
         }
