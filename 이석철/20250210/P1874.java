@@ -25,16 +25,15 @@ public class P1874 {
         // 작으면 기존 스택에서 --하면서 가져와야 함.
         // 이 때, 5에서 3으로 갈 때 4가 스택에 맨 윗요소면 안 되겠지?
         // --할 때 스택의 가장 마지막 인덱스에 필요한 숫자가 위치해있어야함.
+
         while (aIndex < n) {
             int findValue = A.get(aIndex);
 
-            // 스택에 값을 추가하는 부분
             while (currentValue <= findValue) {
                 B.push(currentValue++);
                 plusAndMinus.add('+');
             }
 
-            // 스택에서 값을 꺼내는 부분
             if (!B.isEmpty() && B.peek() == findValue) {
                 B.pop();
                 plusAndMinus.add('-');
