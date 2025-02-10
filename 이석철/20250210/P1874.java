@@ -9,7 +9,7 @@ public class P1874 {
     public static void main(String[] args) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-        List<Integer> A = new ArrayList<>(); // 입력 수열
+        List<Integer> A = new ArrayList<>();
         int n = Integer.parseInt(br.readLine());
 
         for (int i = 0; i < n; i++) {
@@ -17,7 +17,7 @@ public class P1874 {
         }
 
         Stack<Integer> B = new Stack<>();
-        List<Character> plusAndMinus = new ArrayList<>(); // 결과 리스트
+        List<Character> plusAndMinus = new ArrayList<>(); // 쁠마
 
         int currentValue = 1;
         int aIndex = 0;
