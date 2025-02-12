@@ -8,8 +8,8 @@
 |  2  |  [1051 숫자 정사각형](https://www.acmicpc.net/problem/1051)  | ![Silver III](https://img.shields.io/badge/SILVER%20III-A3A3A3?style=flat) |
 |  3  |      [1895 필터](https://www.acmicpc.net/problem/1895)       | ![Silver IV](https://img.shields.io/badge/SILVER%20IV-A3A3A3?style=flat)   |
 |  4  | [14889 스타트와 링크](https://www.acmicpc.net/problem/14889) | ![Silver I](https://img.shields.io/badge/SILVER%20I-A3A3A3?style=flat)     |
-|  5  | [18111 마인크래프트](https://www.acmicpc.net/problem/10773)  | ![Silver II](https://img.shields.io/badge/SILVER%20II-A3A3A3?style=flat)   |
-|  6  |      [2615 오목](https://www.acmicpc.net/problem/10799)      | ![Silver I](https://img.shields.io/badge/SILVER%20I-A3A3A3?style=flat)     |
+|  5  | [18111 마인크래프트](https://www.acmicpc.net/problem/18111)  | ![Silver II](https://img.shields.io/badge/SILVER%20II-A3A3A3?style=flat)   |
+|  6  |      [2615 오목](https://www.acmicpc.net/problem/2615)       | ![Silver I](https://img.shields.io/badge/SILVER%20I-A3A3A3?style=flat)     |
 
 ## week1(0205 ~ 0211)
 
