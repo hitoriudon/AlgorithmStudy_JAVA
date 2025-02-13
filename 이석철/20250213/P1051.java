@@ -31,7 +31,7 @@ public class P1051 {
                     if ((i + k) < n && (j + k) < m) { // 배열 인덱스 벗어나면 ㄴㄴ해
                         if (startPointValue == rectangle[i][j + k] && startPointValue == rectangle[i + k][j]
                                 && startPointValue == rectangle[i + k][j + k]) {
-                            maxSquare = Math.max(maxSquare, (k + 1) * (k + 1));
+                            maxSquare = Math.max(maxSquare, (k + 1) * (k + 1)); // 최대 넓이 갱신
                         }
                     }
                 }
