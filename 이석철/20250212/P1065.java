@@ -31,8 +31,9 @@ public class P1065 {
     private static boolean isHansu(int number) {
         String strNum = String.valueOf(number);
         int len = strNum.length();
-        
-        if (len < 3) return true; 
+
+        if (len < 3)
+            return true;
 
         Set<Integer> diffs = new HashSet<>();
         for (int i = 0; i < len - 1; i++) {
