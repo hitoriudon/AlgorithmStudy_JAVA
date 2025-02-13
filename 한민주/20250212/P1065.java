@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
@@ -9,13 +10,18 @@ public class P1065 {
 public class Main {
 =======
 package com.ssafy;
+=======
+>>>>>>> 4bcfbd6 (add solution 0213)
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
 public class P1065 {
+<<<<<<< HEAD
 >>>>>>> 44d22db (add solution 0212)
 >>>>>>> 6e7fe7f (add solution 0212)
+=======
+>>>>>>> 4bcfbd6 (add solution 0213)
 
 	public static void main(String[] args) throws Exception {
 		// TODO Auto-generated method stub
@@ -54,6 +60,7 @@ public class P1065 {
 	}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 }
 =======
@@ -63,3 +70,6 @@ public class P1065 {
 }
 >>>>>>> 44d22db (add solution 0212)
 >>>>>>> 6e7fe7f (add solution 0212)
+=======
+}
+>>>>>>> 4bcfbd6 (add solution 0213)
