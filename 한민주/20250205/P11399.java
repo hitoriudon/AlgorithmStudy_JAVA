@@ -15,10 +15,7 @@ public class P11399 {
         }
 
         Arrays.sort(waitTimes); // 1 2 3 3 4
-<<<<<<< HEAD
 
-=======
->>>>>>> 1f770ce (add solution 0205)
         // for i in arr[n]
         int sum = 0;
         for (int i : waitTimes) { // 5 8 9 6 4
@@ -28,16 +25,5 @@ public class P11399 {
         System.out.println(sum);
 
     }
-<<<<<<< HEAD
-
 
 }
-<<<<<<< HEAD
-=======
-}
->>>>>>> 1f770ce (add solution 0205)
-=======
-
-
-
->>>>>>> a88fa7a (add solution 0205)
