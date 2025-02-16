@@ -38,7 +38,7 @@ public class P14889 {
             if (!visited[i]) {
                 visited[i] = true;
                 combination(i + 1, r + 1);
-                visited[i] = false; // 백트래킹
+                visited[i] = false;
             }
         }
     }
