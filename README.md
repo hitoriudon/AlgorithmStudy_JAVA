@@ -2,6 +2,8 @@
 
 ## week3(0219 ~ 0225)
 
+### BFS
+
 |  #  |                           Title                            | Difficulty                                                           |
 | :-: | :--------------------------------------------------------: | :------------------------------------------------------------------- |
 |  1  |  [15686 치킨 배달](https://www.acmicpc.net/problem/15686)  | ![Gold V](https://img.shields.io/badge/GOLD%20V-D5A11E?style=flat)   |
@@ -13,6 +15,8 @@
 
 ## week2(0212 ~ 0218)
 
+### BruteForce
+
 |  #  |                            Title                             | Difficulty                                                                 |
 | :-: | :----------------------------------------------------------: | :------------------------------------------------------------------------- |
 |  1  |      [1065 한수](https://www.acmicpc.net/problem/1065)       | ![Silver IV](https://img.shields.io/badge/SILVER%20IV-A3A3A3?style=flat)   |
@@ -23,6 +27,8 @@
 |  6  |      [2615 오목](https://www.acmicpc.net/problem/2615)       | ![Silver I](https://img.shields.io/badge/SILVER%20I-A3A3A3?style=flat)     |
 
 ## week1(0205 ~ 0211)
+
+### Sorting Algorithm, Stack, Queue, Deque
 
 |  #  |                           Title                            | Difficulty                                                                 |
 | :-: | :--------------------------------------------------------: | :------------------------------------------------------------------------- |
