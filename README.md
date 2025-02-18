@@ -1,5 +1,16 @@
 # Algorithm Study
 
+## week3(0219 ~ 0225)
+
+|  #  |                           Title                            | Difficulty                                                           |
+| :-: | :--------------------------------------------------------: | :------------------------------------------------------------------- |
+|  1  |  [15686 치킨 배달](https://www.acmicpc.net/problem/15686)  | ![Gold V](https://img.shields.io/badge/GOLD%20V-D5A11E?style=flat)   |
+|  2  |    [7576 토마토](https://www.acmicpc.net/problem/7576)     | ![Gold V](https://img.shields.io/badge/GOLD%20V-D5A11E?style=flat)   |
+|  3  |  [10026 적록색약](https://www.acmicpc.net/problem/10026)   | ![Gold V](https://img.shields.io/badge/GOLD%20V-D5A11E?style=flat)   |
+|  4  |    [2589 보물섬](https://www.acmicpc.net/problem/2589)     | ![Gold V](https://img.shields.io/badge/GOLD%20IV-D5A11E?style=flat)  |
+|  5  |     [2573 빙산](https://www.acmicpc.net/problem/2573)      | ![Gold IV](https://img.shields.io/badge/GOLD%20IV-D5A11E?style=flat) |
+|  6  | [13460 구슬 탈출 2](https://www.acmicpc.net/problem/13460) | ![Gold I](https://img.shields.io/badge/GOLD%20I-D5A11E?style=flat)   |
+
 ## week2(0212 ~ 0218)
 
 |  #  |                            Title                             | Difficulty                                                                 |
