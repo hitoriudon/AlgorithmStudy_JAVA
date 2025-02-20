@@ -35,6 +35,7 @@ public class P7576 {
 		int now = 0;
 		int nextCnt = 0;
 
+		if(totalTo == 0) day = 0;
 		while (!q.isEmpty()) {
 			int[] xy = q.pollFirst();
 			int x = xy[0];
@@ -55,7 +56,8 @@ public class P7576 {
 				}
 			}
 
-			if(totalTo == 0) break;
+			if (totalTo == 0)
+				break;
 			if (now == cnt) {
 				cnt = nextCnt;
 				day++;
