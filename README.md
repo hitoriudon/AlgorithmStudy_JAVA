@@ -1,5 +1,20 @@
 # Algorithm Study
 
+## Java 파일 개수
+
+<!-- JAVA_COUNT_START -->
+
+- 김성민 폴더의 Java 파일 개수: 0
+- 김준영 폴더의 Java 파일 개수: 0
+- 김채하 폴더의 Java 파일 개수: 0
+- 양찬열 폴더의 Java 파일 개수: 0
+- 오혜윤 폴더의 Java 파일 개수: 0
+- 이석철 폴더의 Java 파일 개수: 0
+- 제갈도현 폴더의 Java 파일 개수: 0
+- 최지호 폴더의 Java 파일 개수: 0
+- 한민주 폴더의 Java 파일 개수: 0
+<!-- JAVA_COUNT_END -->
+
 ## week3(0219 ~ 0225)
 
 ### BFS
