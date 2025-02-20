@@ -1,0 +1,41 @@
+name: Update README with Java file count
+
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    - cron: "0 0 * * *" # 매일 자정 실행 (UTC 기준)
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Count Java files
+        id: count_java_files
+        run: |
+          java_counts=""
+          for folder in $(find . -mindepth 1 -maxdepth 1 -type d); do
+            folder_name=$(basename "$folder")
+            count=$(find "$folder" -type f -name "*.java" | wc -l)
+            java_counts="${java_counts}- ${folder_name} 폴더의 Java 파일 개수: ${count}\n"
+          done
+
+          echo -e "JAVA_COUNTS<<EOF\n${java_counts}EOF" >> $GITHUB_ENV
+
+      - name: Update README.md
+        run: |
+          sed -i '/<!-- JAVA_COUNT_START -->/,/<!-- JAVA_COUNT_END -->/c\
+          <!-- JAVA_COUNT_START -->\n'"$JAVA_COUNTS"'<!-- JAVA_COUNT_END -->' README.md
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          git add README.md
+          git diff --quiet && git diff --staged --quiet || git commit -m "Update README with Java file count"
+          git push
