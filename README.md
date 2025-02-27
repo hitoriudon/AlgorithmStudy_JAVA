@@ -22,7 +22,7 @@
 | Practice |  [1260 DFS와 BFS](https://www.acmicpc.net/problem/1260)  | ![Silver II](https://img.shields.io/badge/SILVER%20II-A3A3A3?style=flat) |
 |    1     |   [1987 알파벳](https://www.acmicpc.net/problem/1987)    | ![Gold IV](https://img.shields.io/badge/GOLD%20IV-D5A11E?style=flat)     |
 |    2     |    [1068 트리](https://www.acmicpc.net/problem/1068)     | ![Gold V](https://img.shields.io/badge/GOLD%20V-D5A11E?style=flat)       |
-|    3     | [1707 이분 그래프](https://www.acmicpc.net/problem/7576) | ![Gold IV](https://img.shields.io/badge/GOLD%20IV-D5A11E?style=flat)     |
+|    3     | [1707 이분 그래프](https://www.acmicpc.net/problem/1707) | ![Gold IV](https://img.shields.io/badge/GOLD%20IV-D5A11E?style=flat)     |
 |    4     |    [2638 치즈](https://www.acmicpc.net/problem/2638)     | ![Gold III](https://img.shields.io/badge/GOLD%20III-D5A11E?style=flat)   |
 |    5     |   [2458 키 순서](https://www.acmicpc.net/problem/2458)   | ![Gold IV](https://img.shields.io/badge/GOLD%20IV-D5A11E?style=flat)     |
 |    6     |   [13023 ABCDE](https://www.acmicpc.net/problem/13023)   | ![Gold I](https://img.shields.io/badge/GOLD%20V-D5A11E?style=flat)       |
