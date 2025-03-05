@@ -15,6 +15,23 @@
 - 한민주 폴더의 Java 파일 개수: 0 -->
 <!-- JAVA_COUNT_END -->
 
+## week5(0305 ~ 0311)
+
+### 백트래킹에 대해 감이 잘 안 잡히시는 분들은, 다음 링크에서 'N과 M' 시리즈를 한 번 풀어보시는 걸 권장드립니다. https://www.acmicpc.net/step/34
+
+|  #  |                            Title                             | Difficulty                                                               |
+| :-: | :----------------------------------------------------------: | :----------------------------------------------------------------------- |
+|  1  |   [1759 암호 만들기](https://www.acmicpc.net/problem/1759)   | ![Gold V](https://img.shields.io/badge/GOLD%20V-D5A11E?style=flat)       |
+|  1  |  [2630 색종이 만들기](https://www.acmicpc.net/problem/2630)  | ![Silver II](https://img.shields.io/badge/SILVER%20II-A3A3A3?style=flat) |
+|  2  |     [9663 N-Queen](https://www.acmicpc.net/problem/9663)     | ![Gold IV](https://img.shields.io/badge/GOLD%20IV-D5A11E?style=flat)     |
+|  2  |    [1992 쿼드 트리](https://www.acmicpc.net/problem/1992)    | ![Silver I](https://img.shields.io/badge/SILVER%20I-A3A3A3?style=flat)   |
+|  3  |     [2580 스도쿠](https://www.acmicpc.net/problem/2580)      | ![Gold IV](https://img.shields.io/badge/GOLD%20V-D5A11E?style=flat)      |
+|  3  |   [1780 종이의 개수](https://www.acmicpc.net/problem/1780)   | ![Silver II](https://img.shields.io/badge/SILVER%20II-A3A3A3?style=flat) |
+|  4  |  [1941 소문난 칠공주](https://www.acmicpc.net/problem/1941)  | ![Gold III](https://img.shields.io/badge/GOLD%20III-D5A11E?style=flat)   |
+|  5  |      [1629 곱셈](https://www.acmicpc.net/problem/1629)       | ![Silver I](https://img.shields.io/badge/SILVER%20I-A3A3A3?style=flat)   |
+|  5  |   [10830 행렬 제곱](https://www.acmicpc.net/problem/10830)   | ![Gold IV](https://img.shields.io/badge/GOLD%20IV-D5A11E?style=flat)     |
+|  6  | [11444 피보나치 수 6](https://www.acmicpc.net/problem/11444) | ![Gold II](https://img.shields.io/badge/GOLD%20II-D5A11E?style=flat)     |
+
 ## week4(0226 ~ 0304)
 
 |    #     |                            Title                             | Difficulty                                                               |
