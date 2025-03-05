@@ -17,6 +17,8 @@
 
 ## week5(0305 ~ 0311)
 
+### Backtracking + Divide & Conquer
+
 #### 백트래킹에 대해 감이 잘 안 잡히시는 분들은 다음 링크에서 'N과 M' 시리즈를 한 번 풀어보시는 걸 권장드립니다.
 
 #### https://www.acmicpc.net/step/34
@@ -35,6 +37,8 @@
 |  6  | [11444 피보나치 수 6](https://www.acmicpc.net/problem/11444) | ![Gold II](https://img.shields.io/badge/GOLD%20II-D5A11E?style=flat)     |
 
 ## week4(0226 ~ 0304)
+
+### DFS
 
 |    #     |                            Title                             | Difficulty                                                               |
 | :------: | :----------------------------------------------------------: | :----------------------------------------------------------------------- |
