@@ -6,7 +6,7 @@ import java.util.StringTokenizer;
 public class P2630 {
     static int[][] map;
     static int white = 0;
-    static int black = 0;;
+    static int black = 0;
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -14,7 +14,7 @@ public class P2630 {
 
         int n = Integer.parseInt(br.readLine());
 
-        int[][] map = new int[n][n];
+        map = new int[n][n];
 
         for(int i = 0; i < n; i++) {
             st = new StringTokenizer(br.readLine());
@@ -25,6 +25,9 @@ public class P2630 {
 
         //자르고 확인, 자르고, 확인
         divide(0,0,n);
+
+        System.out.println(white);
+        System.out.println(black);
     }
 
     private static void divide(int x, int y, int size) {
@@ -57,7 +60,6 @@ public class P2630 {
 				}
 			}
 		}
-		// 검사가 모두 통과했다는 의미이므로 true 리턴
 		return true;
 	}
 }
