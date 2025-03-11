@@ -1,7 +1,4 @@
-/** 
- * 시간 초과. 가지치기 잘 했다고 생각했는데 그냥 재귀 형태로 하는 게 맞는듯
- */
-import java.io.BufferedReader;
+﻿import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.ArrayDeque;
 import java.util.ArrayList;
@@ -20,16 +17,16 @@ import java.util.StringTokenizer;
  * [7, 7, 7][8, 8, 8][9, 9, 9]
  * [7, 7, 7][8, 8, 8][9, 9, 9]
  */
-public class P2580 {
+public class Main {
     static int[][] grid;
-    static ArrayList<ArrayList<Integer>> lack; // �� ����(loc 1~9)���� ������ ���ڵ�
-    static ArrayList<ArrayList<Point>> blankBlocks; // �� ������ �� ĭ ��ǥ��
+    static ArrayList<ArrayList<Integer>> lack; // 각 블록(loc 1~9)에서 부족한 숫자들
+    static ArrayList<ArrayList<Point>> blankBlocks; // 각 블록의 빈 칸 좌표들
     static boolean solved = false;
 
     static class Point {
         int x;
         int y;
-        int loc; // �ش� ���� ���ϴ� 3��3 ���� ��ȣ (1~9)
+        int loc; // 해당 셀이 속하는 3×3 블록 번호 (1~9)
 
         Point(int x, int y, int loc) {
             this.x = x;
@@ -43,7 +40,7 @@ public class P2580 {
         StringTokenizer st;
         grid = new int[9][9];
 
-        // ������ �� �Է�
+        // 스도쿠 판 입력
         for (int i = 0; i < 9; i++) {
             st = new StringTokenizer(br.readLine());
             for (int j = 0; j < 9; j++) {
@@ -51,8 +48,11 @@ public class P2580 {
             }
         }
 
-        // loc 1~9�� ���� �ε��� 0�� ������� �ʰ�, �� ���Ϻ��� �� ĭ ������ ������ ���ڸ� ������ ����Ʈ �ʱ�ȭ
+        // loc 1~9에 대해 인덱스 0은 사용하지 않고, 각 블록별로 빈 칸 정보와 부족한 숫자를 저장할 리스트 초기화
         // 
+        //
+        //
+        //
         lack = new ArrayList<>();
         blankBlocks = new ArrayList<>();
         for (int i = 0; i < 10; i++) {
@@ -60,13 +60,13 @@ public class P2580 {
             blankBlocks.add(new ArrayList<Point>());
         }
 
-        // �� 3��3 ������ ��ȸ�ϸ� ó��
+        // 각 3×3 블록을 순회하며 처리
         for (int bi = 0; bi < 3; bi++) {
             for (int bj = 0; bj < 3; bj++) {
-                int blockNum = bi * 3 + bj + 1; // ���� ��ȣ 1~9
+                int blockNum = bi * 3 + bj + 1; // 블록 번호 1~9
                 int[] oneToNine = new int[10];
                 ArrayDeque<Point> temp = new ArrayDeque<>();
-                // �ش� ���� �� 3��3 �� ó��
+                // 해당 블록 내 3×3 셀 처리
                 for (int x = 0; x < 3; x++) {
                     for (int y = 0; y < 3; y++) {
                         int r = bi * 3 + x;
@@ -78,7 +78,7 @@ public class P2580 {
                         }
                     }
                 }
-                // �� ĭ�� �� �� ���� �ٷ� ä���
+                // 빈 칸이 딱 한 개면 바로 채우기
                 if (oneToNine[0] == 1) {
                     Point p = temp.poll();
                     for (int idx = 1; idx < 10; idx++) {
@@ -88,7 +88,7 @@ public class P2580 {
                         }
                     }
                 } else {
-                    // �� ĭ�� ���� ���� ���: �ش� ������ �� ĭ ��ǥ�� ������ ���ڵ��� ����
+                    // 빈 칸이 여러 개인 경우: 해당 블록의 빈 칸 좌표와 부족한 숫자들을 저장
                     while (!temp.isEmpty()) {
                         Point p = temp.poll();
                         blankBlocks.get(blockNum).add(p);
@@ -102,55 +102,66 @@ public class P2580 {
             }
         }
 
-        // ���� 1���� 9���� ������� ������ �̿��� �� ĭ ä��� ����
+        // (디버깅용) 초기 스도쿠 판 출력
+        // System.out.println("초기 스도쿠 판:");
+        // printGrid();
+
+        // 블록 1부터 9까지 순서대로 순열을 이용해 빈 칸 채우기 시작
         solveBlocks(1);
 
+        if (!solved) {
+            // System.out.println("스도쿠 해결 불가");
+        }
     }
 
-    // block ��ȣ 1~9�� ���������� ó��
+    // block 번호 1~9를 순차적으로 처리
     public static void solveBlocks(int block) {
         if (block > 9) {
-            // ��� ���� ä�� �� ��ü ������ ��Ģ �˻�
+            // 모든 블록 채운 후 전체 스도쿠 규칙 검사
             if (isValid()) {
                 solved = true;
+                // System.out.println("해결된 스도쿠:");
                 printGrid();
             }
             return;
         }
 
-        // ���� ���Ͽ� �� ĭ�� ���ٸ� ���� ��������
+        // 현재 블록에 빈 칸이 없다면 다음 블록으로
         if (blankBlocks.get(block).isEmpty()) {
             solveBlocks(block + 1);
             return;
         }
 
-        // ���� ������ �� ĭ�� ���� ������ �̿��� ������ ���ڵ��� ����
+        // 현재 블록의 빈 칸에 대해 순열을 이용해 부족한 숫자들을 배정
         solveBlockPermutation(block, 0);
     }
 
-    // �ش� ����(block)�� �� ĭ�� ���� missing ���� ������ ���� (index: ���� ������ ��ġ)
+    // 해당 블록(block)의 빈 칸에 대해 missing 숫자 순열로 배정 (index: 현재 배정할 위치)
     // 
+    //
+    //
+    //
     public static void solveBlockPermutation(int block, int index) {
-        // �ش� ������ missing ���� ����Ʈ�� �� ĭ ����Ʈ
+        // 해당 블록의 missing 숫자 리스트와 빈 칸 리스트
         ArrayList<Integer> missing = lack.get(block);
         ArrayList<Point> blanks = blankBlocks.get(block);
 
         if (index == missing.size()) {
-            // �ش� ���Ͽ� ��� �� ĭ�� ä���ٸ�, ��������� grid�� ��ȿ���� �˻� �� ���� ���� ó��
+            // 해당 블록에 모든 빈 칸을 채웠다면, 현재까지의 grid가 유효한지 검사 후 다음 블록 처리
             if (isValid()) {
                 solveBlocks(block + 1);
             }
             return;
         }
 
-        // ���� ����: missing ����Ʈ�� index���� ������ swap �ϸ鼭 ����
+        // 순열 생성: missing 리스트의 index부터 끝까지 swap 하면서 배정
         for (int i = index; i < missing.size(); i++) {
             // swap
             int temp = missing.get(index);
             missing.set(index, missing.get(i));
             missing.set(i, temp);
 
-            // �� ĭ ����Ʈ���� index��° ���� missing[index] ���� �Ҵ�
+            // 빈 칸 리스트에서 index번째 셀에 missing[index] 숫자 할당
             Point p = blanks.get(index);
             grid[p.x][p.y] = missing.get(index);
 
@@ -158,18 +169,18 @@ public class P2580 {
             if (solved)
                 return;
 
-            // ��Ʈ��ŷ: �Ҵ� ����
+            // 백트래킹: 할당 원복
             grid[p.x][p.y] = 0;
-            // swap ����
+            // swap 복구
             temp = missing.get(index);
             missing.set(index, missing.get(i));
             missing.set(i, temp);
         }
     }
 
-    // ��ü grid�� ������ ��Ģ(��, ��, 3��3 ���� �ߺ� ����)�� �����ϴ��� �˻�
+    // 전체 grid가 스도쿠 규칙(행, 열, 3×3 블록 중복 없음)을 만족하는지 검사
     public static boolean isValid() {
-        // �� �˻�
+        // 행 검사
         for (int i = 0; i < 9; i++) {
             boolean[] seen = new boolean[10];
             for (int j = 0; j < 9; j++) {
@@ -181,7 +192,7 @@ public class P2580 {
                 }
             }
         }
-        // �� �˻�
+        // 열 검사
         for (int j = 0; j < 9; j++) {
             boolean[] seen = new boolean[10];
             for (int i = 0; i < 9; i++) {
@@ -193,7 +204,7 @@ public class P2580 {
                 }
             }
         }
-        // 3��3 ���� �˻�
+        // 3×3 블록 검사
         for (int b = 0; b < 9; b++) {
             boolean[] seen = new boolean[10];
             int startRow = (b / 3) * 3;
