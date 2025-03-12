@@ -31,7 +31,7 @@
 |  4  |      [2156 포도주 시식](https://www.acmicpc.net/problem/2156)       | ![Silver I](https://img.shields.io/badge/SILVER%20I-A3A3A3?style=flat)     |
 |  5  | [25682 체스판 다시 칠하기 2](https://www.acmicpc.net/problem/25682) | ![Gold IV](https://img.shields.io/badge/GOLD%20IV-D5A11E?style=flat)       |
 |  5  |   [11660 구간 합 구하기 5](https://www.acmicpc.net/problem/11660)   | ![Silver I](https://img.shields.io/badge/SILVER%20I-A3A3A3?style=flat)     |
-|  6  |      [2616 소형 기관차](https://www.acmicpc.net/problem/2616)       | ![Gold III](https://img.shields.io/badge/GOLD%20III-A3A3A3?style=flat)     |
+|  6  |      [2616 소형 기관차](https://www.acmicpc.net/problem/2616)       | ![Gold III](https://img.shields.io/badge/GOLD%20III-D5A11E?style=flat)     |
 
 ## week5(0305 ~ 0311)
 
