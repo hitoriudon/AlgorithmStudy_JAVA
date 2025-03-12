@@ -15,6 +15,24 @@
 - 한민주 폴더의 Java 파일 개수: 0 -->
 <!-- JAVA_COUNT_END -->
 
+## week6(0312 ~ 0318)
+
+### Prefix Sum + Dynamic Programming Basic
+
+|  #  |                                Title                                | Difficulty                                                                 |
+| :-: | :-----------------------------------------------------------------: | :------------------------------------------------------------------------- |
+|  1  |    [2167 2차원 배열의 합](https://www.acmicpc.net/problem/2167)     | ![Silver V](https://img.shields.io/badge/SILVER%20V-A3A3A3?style=flat)     |
+|  1  |      [1932 정수 삼각형](https://www.acmicpc.net/problem/1932)       | ![Silver I](https://img.shields.io/badge/SILVER%20I-A3A3A3?style=flat)     |
+|  2  |   [11659 구간 합 구하기 4](https://www.acmicpc.net/problem/11659)   | ![Silver III](https://img.shields.io/badge/SILVER%20III-A3A3A3?style=flat) |
+|  2  |      [2579 계단 오르기](https://www.acmicpc.net/problem/2579)       | ![Silver III](https://img.shields.io/badge/SILVER%20III-A3A3A3?style=flat) |
+|  3  |      [11441 합 구하기](https://www.acmicpc.net/problem/11441)       | ![Silver III](https://img.shields.io/badge/SILVER%20III-A3A3A3?style=flat) |
+|  3  |       [1463 1로 만들기](https://www.acmicpc.net/problem/1463)       | ![Silver III](https://img.shields.io/badge/SILVER%20III-A3A3A3?style=flat) |
+|  4  |       [21758 꿀 따기](https://www.acmicpc.net/problem/21758)        | ![Gold V](https://img.shields.io/badge/GOLD%20V-D5A11E?style=flat)         |
+|  4  |      [2156 포도주 시식](https://www.acmicpc.net/problem/2156)       | ![Silver I](https://img.shields.io/badge/SILVER%20I-A3A3A3?style=flat)     |
+|  5  | [25682 체스판 다시 칠하기 2](https://www.acmicpc.net/problem/25682) | ![Gold IV](https://img.shields.io/badge/GOLD%20IV-D5A11E?style=flat)       |
+|  5  |   [11660 구간 합 구하기 5](https://www.acmicpc.net/problem/11660)   | ![Silver I](https://img.shields.io/badge/SILVER%20I-A3A3A3?style=flat)     |
+|  6  |      [2616 소형 기관차](https://www.acmicpc.net/problem/2616)       | ![Gold III](https://img.shields.io/badge/GOLD%20III-A3A3A3?style=flat)     |
+
 ## week5(0305 ~ 0311)
 
 ### Backtracking + Divide & Conquer
