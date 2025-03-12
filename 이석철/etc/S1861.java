@@ -5,6 +5,7 @@ import java.util.StringTokenizer;
 
 /**
  * S1861 정사각형 방
+ * BFS
  */
 public class S1861 {
     static int n;

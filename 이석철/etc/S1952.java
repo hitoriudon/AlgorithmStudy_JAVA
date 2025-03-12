@@ -1,4 +1,7 @@
-
+/**
+ * SWEA 1952 수영장
+ * DP
+ */
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
