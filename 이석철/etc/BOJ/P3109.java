@@ -1,3 +1,5 @@
+package BOJ;
+
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
@@ -21,47 +23,47 @@ public class P3109 {
         c = Integer.parseInt(st.nextToken());
         grid = new char[r][c];
 
-        for (int i = 0; i < r; i++){
+        for (int i = 0; i < r; i++) {
             String inputString = br.readLine();
-            for (int j = 0; j < c; j++){
+            for (int j = 0; j < c; j++) {
                 grid[i][j] = inputString.charAt(j);
             }
         }
         vis = new boolean[r][c];
-        for (int i = 0; i < r; i++){
+        for (int i = 0; i < r; i++) {
             vis[i][0] = true;
             dfs(i, 0);
-            
+
         }
         System.out.println(answer);
     }
 
-    public static boolean dfs(int x, int y){
+    public static boolean dfs(int x, int y) {
         vis[x][y] = true; //
-        if (y == c - 1){ // 종료 조건
+        if (y == c - 1) { // 종료 조건
             answer++;
             return true;
         }
-        
-        if (isRange(x-1, y+1) && !vis[x-1][y+1] && grid[x-1][y+1] == '.'){
-            if (dfs(x-1, y+1))
+
+        if (isRange(x - 1, y + 1) && !vis[x - 1][y + 1] && grid[x - 1][y + 1] == '.') {
+            if (dfs(x - 1, y + 1))
                 return true;
-            
+
         }
-        if (isRange(x, y+1) && !vis[x][y+1] && grid[x][y+1] == '.'){
-            if (dfs(x, y+1))
+        if (isRange(x, y + 1) && !vis[x][y + 1] && grid[x][y + 1] == '.') {
+            if (dfs(x, y + 1))
                 return true;
         }
-        if (isRange(x+1, y+1) && !vis[x+1][y+1] && grid[x+1][y+1] == '.'){
-            if (dfs(x+1, y+1))
+        if (isRange(x + 1, y + 1) && !vis[x + 1][y + 1] && grid[x + 1][y + 1] == '.') {
+            if (dfs(x + 1, y + 1))
                 return true;
-        }    
+        }
 
         // 이 코드까지 왔다면 갈 수 있는 방향이 없다는 것
         return false;
     }
 
-    public static boolean isRange(int x, int y){
+    public static boolean isRange(int x, int y) {
         return x >= 0 && y >= 0 && x < r && y < c;
     }
 }
