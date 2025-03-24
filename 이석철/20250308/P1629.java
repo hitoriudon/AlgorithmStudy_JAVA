@@ -34,4 +34,6 @@ public class P1629 {
 
         return temp * temp % c;
     }
+
 }
+
