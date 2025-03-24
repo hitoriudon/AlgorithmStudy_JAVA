@@ -1,3 +1,4 @@
+package SWEA;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -15,26 +16,27 @@ public class S1873 {
     static int x;
     static int y;
     static int dir;
-    static final int[] dxs = {-1, 1, 0, 0};
-    static final int[] dys = {0, 0, -1, 1};
+    static final int[] dxs = { -1, 1, 0, 0 };
+    static final int[] dys = { 0, 0, -1, 1 };
+
     public static void main(String[] args) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int T = Integer.parseInt(br.readLine());
         StringBuilder sb = new StringBuilder();
         StringTokenizer st;
 
-        for (int t = 1; t <= T; t++){
+        for (int t = 1; t <= T; t++) {
             st = new StringTokenizer(br.readLine());
             n = Integer.parseInt(st.nextToken());
             m = Integer.parseInt(st.nextToken());
 
             grid = new char[n][m];
-            for (int i = 0; i < n; i++){
+            for (int i = 0; i < n; i++) {
                 String inputString = br.readLine();
-                for (int j = 0; j < m; j++){
+                for (int j = 0; j < m; j++) {
                     char ret = inputString.charAt(j);
-                    if (ret == '<' || ret == 'v' || ret == '^' || ret == '>'){
-                        x = i; 
+                    if (ret == '<' || ret == 'v' || ret == '^' || ret == '>') {
+                        x = i;
                         y = j;
                         if (ret == '^')
                             dir = 0;
@@ -44,48 +46,47 @@ public class S1873 {
                             dir = 2;
                         else
                             dir = 3;
-                    }       
+                    }
                     grid[i][j] = ret;
                 }
             }
-            
+
             int inputCount = Integer.parseInt(br.readLine());
             String command = br.readLine();
 
-            for (int i = 0; i < inputCount; i++){
+            for (int i = 0; i < inputCount; i++) {
                 char c = command.charAt(i);
-                
-                if (c == 'U'){
+
+                if (c == 'U') {
                     grid[x][y] = '^';
                     dir = 0;
                     if (isRange(x + dxs[0], y + dys[0]) && canMove(0))
                         move(0);
                 }
-                if (c == 'D'){
+                if (c == 'D') {
                     grid[x][y] = 'v';
                     dir = 1;
                     if (isRange(x + dxs[1], y + dys[1]) && canMove(1))
                         move(1);
                 }
-                if (c == 'L'){
+                if (c == 'L') {
                     grid[x][y] = '<';
                     dir = 2;
                     if (isRange(x + dxs[2], y + dys[2]) && canMove(2))
                         move(2);
                 }
-                if (c == 'R'){
+                if (c == 'R') {
                     grid[x][y] = '>';
                     dir = 3;
                     if (isRange(x + dxs[3], y + dys[3]) && canMove(3))
                         move(3);
-                }
-                else if (c == 'S')
+                } else if (c == 'S')
                     shoot();
-                
+
             }
             sb.append("#").append(t).append(" ");
-            for (int i = 0; i < n; i++){
-                for (int j = 0; j < m; j++){
+            for (int i = 0; i < n; i++) {
+                for (int j = 0; j < m; j++) {
                     sb.append(grid[i][j]);
                 }
                 sb.append("\n");
@@ -94,34 +95,34 @@ public class S1873 {
         System.out.println(sb);
     }
 
-    public static void shoot(){
+    public static void shoot() {
         int tx = x;
         int ty = y;
-        while (true){
+        while (true) {
             int nx = tx + dxs[dir];
             int ny = ty + dys[dir];
 
             if (!isRange(nx, ny))
                 return;
-            
-            if (grid[nx][ny] == '*'){
+
+            if (grid[nx][ny] == '*') {
                 grid[nx][ny] = '.';
                 return;
             }
 
-            if (grid[nx][ny] == '#'){
+            if (grid[nx][ny] == '#') {
                 return;
             }
             tx = nx;
             ty = ny;
         }
     }
-    
-    public static void move(int d){
+
+    public static void move(int d) {
         grid[x][y] = '.';
         x += dxs[d];
         y += dys[d];
-        
+
         if (d == 0)
             grid[x][y] = '^';
         else if (d == 1)
@@ -132,13 +133,13 @@ public class S1873 {
             grid[x][y] = '>';
     }
 
-    public static boolean canMove(int dir){
+    public static boolean canMove(int dir) {
         return grid[x + dxs[dir]][y + dys[dir]] == '.';
     }
 
-    public static boolean isRange(int x, int y){
+    public static boolean isRange(int x, int y) {
         return x >= 0 && y >= 0 && x < n && y < m;
-    }    
+    }
 }
 // 2
 // 3 7
