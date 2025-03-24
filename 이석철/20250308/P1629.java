@@ -1,3 +1,4 @@
+
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
@@ -33,4 +34,6 @@ public class P1629 {
 
         return temp * temp % c;
     }
+
 }
+

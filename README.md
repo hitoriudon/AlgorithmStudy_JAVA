@@ -15,6 +15,22 @@
 - 한민주 폴더의 Java 파일 개수: 0 -->
 <!-- JAVA_COUNT_END -->
 
+## week7(0319 ~ 0325)
+
+### Dynamic Programming Immediate + Topology Sort
+
+#### 위상 정렬 문제에서 DP를 문제를 푸는 '수단'으로서 사용하는 문제를 가져왔습니다.
+
+#### 어려울 것이니, 반드시 위상 정렬에 대한 이해를 하신 뒤 푸는 것을 권장드립니다.
+
+|  #  |                           Title                            | Difficulty                                                             |
+| :-: | :--------------------------------------------------------: | :--------------------------------------------------------------------- |
+|  1  | [12865 평범한 배낭](https://www.acmicpc.net/problem/12865) | ![Gold V](https://img.shields.io/badge/GOLD%20V-D5A11E?style=flat)     |
+|  2  |    [2529 부등호](https://www.acmicpc.net/problem/2529)     | ![Silver I](https://img.shields.io/badge/SILVER%20I-A3A3A3?style=flat) |
+|  3  |     [2056 작업](https://www.acmicpc.net/problem/2056)      | ![Gold IV](https://img.shields.io/badge/GOLD%20IV-D5A11E?style=flat)   |
+|  4  |   [1005 ACM Craft](https://www.acmicpc.net/problem/1005)   | ![Gold III](https://img.shields.io/badge/GOLD%20III-D5A11E?style=flat) |
+|  5  |   [1516 게임 개발](https://www.acmicpc.net/problem/1516)   | ![Gold III](https://img.shields.io/badge/GOLD%20III-D5A11E?style=flat) |
+
 ## week6(0312 ~ 0318)
 
 ### Prefix Sum + Dynamic Programming Basic

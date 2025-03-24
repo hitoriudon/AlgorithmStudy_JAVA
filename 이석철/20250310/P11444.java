@@ -1,3 +1,4 @@
+
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
@@ -6,7 +7,8 @@ import java.io.InputStreamReader;
  */
 
 public class P11444 {
-    static final long MOD = 1000000;
+
+    static final long MOD = 1000000007;
     static long[][] firstA = {{1, 1} , {1, 0}};
     public static void main(String[] args) throws Exception{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -46,4 +48,6 @@ public class P11444 {
 
         return temp;
     }
+
 }
+
