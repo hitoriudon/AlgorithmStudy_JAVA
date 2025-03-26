@@ -15,6 +15,21 @@
 - 한민주 폴더의 Java 파일 개수: 0 -->
 <!-- JAVA_COUNT_END -->
 
+## week8(0326 ~ 0401)
+
+### Binary Search
+
+#### 이분 탐색 완전 정복
+
+|  #  |                                    Title                                    | Difficulty                                                               |
+| :-: | :-------------------------------------------------------------------------: | :----------------------------------------------------------------------- |
+|  1  |          [1654 랜선 자르기](https://www.acmicpc.net/problem/1654)           | ![Silver II](https://img.shields.io/badge/SILVER%20II-A3A3A3?style=flat) |
+|  2  |          [2805 나무 자르기](https://www.acmicpc.net/problem/2805)           | ![Silver II](https://img.shields.io/badge/SILVER%20II-A3A3A3?style=flat) |
+|  3  |          [2110 공유기 설치](https://www.acmicpc.net/problem/2110)           | ![Gold IV](https://img.shields.io/badge/GOLD%20IV-D5A11E?style=flat)     |
+|  4  |            [1300 K번째 수](https://www.acmicpc.net/problem/1300)            | ![Gold I](https://img.shields.io/badge/GOLD%20I-D5A11E?style=flat)       |
+|  5  | [12015 가장 긴 증가하는 부분 수열 2](https://www.acmicpc.net/problem/12015) | ![Gold II](https://img.shields.io/badge/GOLD%20II-D5A11E?style=flat)     |
+|  6  | [12738 가장 긴 증가하는 부분 수열 3](https://www.acmicpc.net/problem/12738) | ![Gold II](https://img.shields.io/badge/GOLD%20II-D5A11E?style=flat)     |
+
 ## week7(0319 ~ 0325)
 
 ### Dynamic Programming Immediate + Topology Sort
