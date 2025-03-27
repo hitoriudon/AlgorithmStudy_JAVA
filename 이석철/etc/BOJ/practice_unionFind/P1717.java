@@ -2,7 +2,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class P1717HashSet {
+public class P1717 {
     static int n;
     static int[] parents;
 

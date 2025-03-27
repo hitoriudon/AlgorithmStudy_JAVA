@@ -1,4 +1,4 @@
-package practice_LIS;
+package BOJ.practice_LIS;
 
 // 14492kb, 128ms
 

@@ -1,4 +1,4 @@
-package practice_LIS;
+package BOJ.practice_LIS;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
