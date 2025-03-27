@@ -1,3 +1,4 @@
+// 메모리 15424kb, 시간 120ms
 package silver;
 
 import java.io.BufferedReader;
