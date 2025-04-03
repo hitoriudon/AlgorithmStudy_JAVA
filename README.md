@@ -1,19 +1,23 @@
 # Algorithm Study(JAVA)
 
-<!-- ## Java 파일 개수 -->
+## week9(0402 ~ 0408)
 
-<!-- JAVA_COUNT_START -->
+### Union-Find, Minimum Spanning Tree(MST)
 
-<!-- - 김성민 폴더의 Java 파일 개수: 0
-- 김준영 폴더의 Java 파일 개수: 0
-- 김채하 폴더의 Java 파일 개수: 0
-- 양찬열 폴더의 Java 파일 개수: 0
-- 오혜윤 폴더의 Java 파일 개수: 0
-- 이석철 폴더의 Java 파일 개수: 0
-- 제갈도현 폴더의 Java 파일 개수: 0
-- 최지호 폴더의 Java 파일 개수: 0
-- 한민주 폴더의 Java 파일 개수: 0 -->
-<!-- JAVA_COUNT_END -->
+|  #  |                             Title                             | Difficulty                                                                 |
+| :-: | :-----------------------------------------------------------: | :------------------------------------------------------------------------- |
+|  1  |   [1717 집합의 표현](https://www.acmicpc.net/problem/1717)    | ![Gold V](https://img.shields.io/badge/GOLD%20V-D5A11E?style=flat)         |
+|  1  | [1197 최소 스패닝 트리](https://www.acmicpc.net/problem/1197) | ![Gold IV](https://img.shields.io/badge/GOLD%20IV-D5A11E?style=flat)       |
+|  2  |    [1976 여행 가자](https://www.acmicpc.net/problem/1976)     | ![Gold IV](https://img.shields.io/badge/GOLD%20IV-D5A11E?style=flat)       |
+|  2  |   [21924 도시 건설](https://www.acmicpc.net/problem/21924)    | ![Gold IV](https://img.shields.io/badge/GOLD%20IV-D5A11E?style=flat)       |
+|  3  |      [1043 거짓말](https://www.acmicpc.net/problem/1043)      | ![Gold IV](https://img.shields.io/badge/GOLD%20IV-D5A11E?style=flat)       |
+|  3  |  [4386 별자리 만들기](https://www.acmicpc.net/problem/4386)   | ![Gold III](https://img.shields.io/badge/GOLD%20III-D5A11E?style=flat)     |
+|  4  |  [4195 친구 네트워크](https://www.acmicpc.net/problem/4195)   | ![Gold II](https://img.shields.io/badge/GOLD%20II-D5A11E?style=flat)       |
+|  4  | [1774 우주선과의 교감](https://www.acmicpc.net/problem/1774)  | ![Gold III](https://img.shields.io/badge/GOLD%20III-D5A11E?style=flat)     |
+|  5  |  [20040 사이클 게임](https://www.acmicpc.net/problem/20040)   | ![Gold IV](https://img.shields.io/badge/GOLD%20IV-D5A11E?style=flat)       |
+|  5  |      [6497 전력난](https://www.acmicpc.net/problem/6497)      | ![Gold IV](https://img.shields.io/badge/GOLD%20IV-D5A11E?style=flat)       |
+| ADV |   [3197 백조의 호수](https://www.acmicpc.net/problem/3197)    | ![Platinum V](https://img.shields.io/badge/PLATINUM%20V-E5E4E2?style=flat) |
+| ADV |    [2887 행성 터널](https://www.acmicpc.net/problem/2887)     | ![Platinum V](https://img.shields.io/badge/PLATINUM%20V-E5E4E2?style=flat) |
 
 ## week8(0326 ~ 0401)
 
