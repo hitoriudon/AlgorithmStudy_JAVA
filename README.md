@@ -16,8 +16,8 @@
 |  4  | [1774 우주선과의 교감](https://www.acmicpc.net/problem/1774)  | ![Gold III](https://img.shields.io/badge/GOLD%20III-D5A11E?style=flat)     |
 |  5  |  [20040 사이클 게임](https://www.acmicpc.net/problem/20040)   | ![Gold IV](https://img.shields.io/badge/GOLD%20IV-D5A11E?style=flat)       |
 |  5  |      [6497 전력난](https://www.acmicpc.net/problem/6497)      | ![Gold IV](https://img.shields.io/badge/GOLD%20IV-D5A11E?style=flat)       |
-| ADV |   [3197 백조의 호수](https://www.acmicpc.net/problem/3197)    | ![Platinum V](https://img.shields.io/badge/PLATINUM%20V-E5E4E2?style=flat) |
-| ADV |    [2887 행성 터널](https://www.acmicpc.net/problem/2887)     | ![Platinum V](https://img.shields.io/badge/PLATINUM%20V-E5E4E2?style=flat) |
+| ADV |   [3197 백조의 호수](https://www.acmicpc.net/problem/3197)    | ![Platinum V](https://img.shields.io/badge/PLATINUM%20V-27E2A4?style=flat) |
+| ADV |    [2887 행성 터널](https://www.acmicpc.net/problem/2887)     | ![Platinum V](https://img.shields.io/badge/PLATINUM%20V-27E2A4?style=flat) |
 
 ## week8(0326 ~ 0401)
 
